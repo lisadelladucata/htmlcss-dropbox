@@ -78,8 +78,11 @@ body{
 }
 
 .btn-primary {
-    background-color: lightcoral;
+    background-color: #0061fe;
     color: #fff;
+    padding: 3px 8px;
+    border: #fff;
+    cursor: pointer;
 }
 
 /*----------------
@@ -113,7 +116,13 @@ header ul a {
 /*----------------
     MAIN
 ------------------*/
+main :first-child{
+    background-color: #b4d0e6;
+}
 
+h1{
+    font-size: 70px;
+}
 /*----------------
     FOOTER
 ------------------*/
