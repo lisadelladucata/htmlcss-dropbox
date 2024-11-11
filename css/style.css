@@ -1,7 +1,7 @@
 /*----------------
     DEBUG
 ------------------*/
-.debug .container {
+/* .debug .container {
     border: 2px dashed blueviolet;
 }
 
@@ -9,7 +9,7 @@
     border: 2px dashed lightcoral;
     background-color: rgba(240, 128, 128, 0.2);
     min-height: 200px;
-}
+} */
 
 /*----------------
     RESET
@@ -44,12 +44,6 @@ img {
     display: flex;
 }
 
-.gap-10 {
-    gap: 10px;
-}
-.gap-20 {
-    gap: 20px;
-}
 .gap-30 {
     gap: 30px;
 }
@@ -68,19 +62,13 @@ body{
 /*----------------
     BUTTONS
 ------------------*/
-.btn {
-    background-color: transparent;
-    font-family: inherit;
-    border: none;
-    padding: 6px 12px;
-    cursor: pointer;
-}
 
 .btn-secondary {
     padding: 10px 20px;
     background-color: transparent;
     border: 1px solid gray;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .btn-primary {
@@ -165,12 +153,12 @@ h1{
 
 section .container-large{
     position: relative;
-    bottom: -150px;
+    bottom: -160px;
     background-color: transparent;
 }
 
-section{
-    padding: 100px 0px;
+section, footer{
+    padding: 60px 0px;
 }
 
 h2{
@@ -193,26 +181,35 @@ h2{
 .col ul li{
     display: flex;
     list-style: none;
-    padding: 5px 0px;
+    gap: 10px;
 }
 
 a{
     color: #0860ff;
 }
 
+.row .btn-primary{
+    width: 100%;
+}
+
 .different>p:first-of-type{
     color: white;
 }
 
-.col{
+section:nth-child(2) .col{
     border: 1px solid lightgray;
     padding: 0px 20px;
 }
 
-.col .titoli{
+.col .titoli {
     border-bottom: 1px solid lightgray;
     text-align: center;
 }
+
+.orizontal-col .col{
+    padding-left: 20px;
+}
+
 .top-col{
     display: flex;
     justify-content: space-between;
@@ -226,3 +223,28 @@ a{
 /*----------------
     FOOTER
 ------------------*/
+
+footer{
+    color: whitesmoke;
+    background-color: #000000;
+}
+
+footer ul li{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: inherit;
+}
+
+footer .col i{
+    padding-top: 60px;
+    padding-right: 10px;
+}
+
+footer .col i:last-of-type{
+    padding-left: 10px;
+}
