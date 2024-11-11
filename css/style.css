@@ -78,15 +78,18 @@ body{
 
 .btn-secondary {
     padding: 10px 20px;
+    background-color: transparent;
+    border: 1px solid gray;
     font-size: 16px;
 }
 
 .btn-primary {
     background-color: #0061fe;
     color: #fff;
-    padding: 3px 8px;
+    padding: 4px 10px;
     border: #fff;
     cursor: pointer;
+    font-size: 16px;
 }
 
 /*----------------
@@ -128,7 +131,7 @@ section:first-of-type{
     display: flex;
 }
 
-.hero .left-col, h1{
+.hero .small-col, h1{
     flex-direction: column;
 }
 
@@ -136,26 +139,26 @@ h1{
     font-size: 70px;
 }
 
-.left-col{
+.small-col{
     background-color: transparent;
     width: 30%;
 }
 
-.left-col p{
+.small-col p{
     padding: 30px 0px;
 }
-.left-col a{
+.small-col a{
     display: block;
     text-decoration: none;
     color: inherit;
     padding: 30px 0px;
 }
 
-.left-col i{
+.small-col i{
     font-size: 50px;
 }
 
-.right-col{
+.big-col{
     width: 70%;
     padding: 30px 0px;
 }
@@ -166,8 +169,8 @@ section .container-large{
     background-color: transparent;
 }
 
-section:nth-of-type(2n){
-    padding-top: 200px;
+section{
+    padding: 100px 0px;
 }
 
 h2{
@@ -193,27 +196,32 @@ h2{
     padding: 5px 0px;
 }
 
-.col p:nth-of-type(2n){
-    color: gray;
-    padding: 10px 0px;
-}
-
-.col a{
+a{
     color: #0860ff;
 }
 
-.different p:nth-of-type(2n){
+.different>p:first-of-type{
     color: white;
 }
 
 .col{
     border: 1px solid lightgray;
-    padding: 20px;
+    padding: 0px 20px;
 }
 
 .col .titoli{
     border-bottom: 1px solid lightgray;
     text-align: center;
+}
+.top-col{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero .small-col:last-child{
+    width: 40%;
+    padding: 50px;
+    font-size: 20px;
 }
 /*----------------
     FOOTER
