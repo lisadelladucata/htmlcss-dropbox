@@ -236,6 +236,7 @@ footer ul li{
     list-style: none;
     display: flex;
     gap: 20px;
+    padding: 10px 0px;
 }
 
 footer a{
